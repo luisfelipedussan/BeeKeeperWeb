@@ -1,6 +1,8 @@
 mat-toolbar-row {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
+
     padding: 0;
     background-color: white;
 
@@ -15,16 +17,31 @@ mat-toolbar {
     flex: 1 1 auto;
 }
 
-mat-form-field {
-    width: 15%;
+
+.container {
+    margin-top: 200px;
+    margin: 0 auto;
+    max-width: 600px; 
+    padding: 20px;
 }
 
-#label1,
-#label2{
-    margin-top: 0;
-
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; 
 }
 
+th, td {
+    
+    background-color: #f6dff8 ;
+    padding: 8px;
+    text-align: center;
+    border: none; 
+}
+
+th {
+    background-color: white;
+}
 h1 {
     font-size: 2rem;
     font-weight: 500;
@@ -33,20 +50,28 @@ h1 {
     height: 50px;
     text-align: center;
     color: #4D0D53;
+    margin-bottom: 50px;
 
 
 }
 
-h2 {
-
-    font-size: 1.5rem;
+.Titulo{
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.2;
     font-family: 'Lexend', sans-serif;
     height: 50px;
     text-align: center;
-    color: black; 
+    color: black;
+
 }
+
+#bill-list{
+
+    background-color: #F6CDFA ;
+}
+
+
 
 .recarga-container {
     display: flex;
