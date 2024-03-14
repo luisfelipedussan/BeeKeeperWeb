@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import { Component , ChangeDetectionStrategy} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -17,18 +16,19 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatButtonToggleGroup } from '@angular/material/button-toggle';
-
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 @Component({
-  selector: 'app-recarga',
+  selector: 'app-main-page',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive,
-    MatSidenavModule, MatToolbarModule, MatCardModule, MatIconModule, MatExpansionModule,
-    MatButtonToggleModule, MatButtonToggleGroup, MatGridListModule, MatInputModule,
-    MainNavComponent, FooterComponent],
-  templateUrl: './recarga.component.html',
-  styleUrl: './recarga.component.scss'
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive
+    , MatSidenavModule, MatToolbarModule, MatCardModule, MatIconModule, MatExpansionModule,
+     MatButtonToggleModule, MatButtonToggleGroup, MatGridListModule, MatInputModule, 
+     MainNavComponent, FooterComponent, ScrollingModule ],
+  templateUrl: './main-page.component.html',
+  styleUrl: './main-page.component.scss'
 })
-export class RecargaComponent {
+export class MainPageComponent {
 
 }
