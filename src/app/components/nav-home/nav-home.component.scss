@@ -1,0 +1,55 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#Logo {
+    size: 50px;
+}
+
+#Home,
+#Contacto,
+#Login {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Lexend', sans-serif;
+
+}
+
+#Login {
+    color: #FBBC05;
+
+}
+
+.btn-primary {
+    background-color: #4D0D53;
+    border-color: #4D0D53;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    margin-right: 100px;
+    margin-left: 80px;
+
+}
+
+.mat-toolbar {
+        position: fixed;
+
+    background-color: #4D0D53;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+}
+
+.mat-toolbar-row,
+.mat-toolbar {
+
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.toolbarMiddleSpace {
+    flex: 1 1 auto;
+}
