@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
-
 import { RouterOutlet } from '@angular/router';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
-
-import { FooterComponent } from '../footer/footer.component';
-import { MainNavComponent } from '../main-nav/main-nav.component';
 
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -18,17 +14,18 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatButtonToggleGroup } from '@angular/material/button-toggle';
 
-
 @Component({
-  selector: 'app-recarga',
+  selector: 'app-main-nav',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive,
-    MatSidenavModule, MatToolbarModule, MatCardModule, MatIconModule, MatExpansionModule,
-    MatButtonToggleModule, MatButtonToggleGroup, MatGridListModule, MatInputModule,
-    MainNavComponent, FooterComponent],
-  templateUrl: './recarga.component.html',
-  styleUrl: './recarga.component.scss'
+  imports: [RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    CommonModule, MatSidenavModule, MatToolbarModule,
+    MatCardModule, MatIconModule, MatExpansionModule, MatButtonToggleModule,
+    MatButtonToggleGroup, MatGridListModule, MatInputModule],
+  templateUrl: './main-nav.component.html',
+  styleUrl: './main-nav.component.scss'
 })
-export class RecargaComponent {
+export class MainNavComponent {
 
 }

@@ -1,1 +1,81 @@
-<p>recarga works!</p>
+<!DOCTYPE html>
+<mat-sidenav-container class="mat-container">
+
+    <mat-sidenav-content>
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <header class="header">
+                    <app-main-nav> </app-main-nav>
+                </header>
+            </mat-toolbar-row>
+
+            <mat-toolbar-row>
+                <span class="toolbarMiddleSpace"></span>
+
+                <div class="centered-text">
+                    <h1>Recarga Automática</h1>
+                </div>
+                <span class="toolbarMiddleSpace"></span>
+
+            </mat-toolbar-row>
+
+            <mat-toolbar-row>
+                <span class="toolbarMiddleSpace"></span>
+
+                <div class="centered-text">
+                    <h2>Cantidad Mensual de Recarga</h2>
+                </div>
+                <span class="toolbarMiddleSpace"></span>
+
+            </mat-toolbar-row>
+
+            <mat-toolbar-row id = "label1">
+                <span class="toolbarMiddleSpace"></span>
+
+                <mat-form-field class="label-field">
+                    <mat-label class="label">Monto</mat-label>
+                    <input class="input" matInput placeholder="Ingrese su usuario">
+                  </mat-form-field>
+                <span class="toolbarMiddleSpace"></span>
+            </mat-toolbar-row>
+
+            <mat-toolbar-row>
+                <span class="toolbarMiddleSpace"></span>
+
+                <div class="centered-text">
+                    <h2>Seleccionar Tarjeta Inscrita</h2>
+                </div>
+                <span class="toolbarMiddleSpace"></span>
+
+          
+            </mat-toolbar-row>
+            <mat-toolbar-row id = "label2">
+                <span class="toolbarMiddleSpace"></span>
+
+                <mat-form-field class="label-field">
+                    <mat-label class="label">Número de Tarjeta</mat-label>
+                    <input class="input" matInput placeholder="Ingrese su usuario">
+                  </mat-form-field>
+                <span class="toolbarMiddleSpace"></span>
+            </mat-toolbar-row>
+
+            <mat-toolbar-row>  
+                <span class="toolbarMiddleSpace"></span>
+ 
+                <button routerLink="/main-page" routerLinkActive="active" ariaCurrentWhenActive="page" class="btnRecarga"
+                mat-raised-button color="primary">Recargar</button>
+                <span class="toolbarMiddleSpace"></span>
+
+            </mat-toolbar-row>
+
+
+
+
+            <footer>
+                <app-footer> </app-footer>
+            </footer>
+        </mat-toolbar>
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

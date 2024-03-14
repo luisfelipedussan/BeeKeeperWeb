@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<mat-grid-list cols="2"  >
-    <!-- Primera columna: Imagen -->
-    <mat-grid-tile>
-      <img id = "businessIMG" src="\assets\images\business.jpg" alt="Imagen"  height = 500px>
-    </mat-grid-tile>
-    
-    <!-- Segunda columna: Formulario de inicio de sesión -->
-    <mat-grid-tile>
-        <div class="login-container">
-          <mat-card class="login-card">
-            <mat-card-header class = "header-card">
-              <mat-card-title class="form-title">Iniciar Sesión</mat-card-title>
-            </mat-card-header>
-            <mat-card-content class ="content-card">
-              <form>
-                <mat-form-field class = "label-field">
-                  <mat-label class = "label">Usuario</mat-label>
-                  <input class = "input" matInput placeholder="Ingrese su usuario">
-                </mat-form-field>
-                <mat-form-field class = "label-field">
-                  <mat-label class = "label">Contraseña</mat-label>
-                  <input matInput type="password" placeholder="Ingrese su contraseña">
-                </mat-form-field>
-                <button class = "btnLogin" mat-raised-button color="primary">Ingresar</button>
-              </form>
-            </mat-card-content>
-          </mat-card>
-        </div>
-      </mat-grid-tile>
-      
-      
-  </mat-grid-list>
+<mat-grid-list cols="2">
+  <!-- Primera columna: Imagen -->
+  <mat-grid-tile>
+    <img id="businessIMG" src="\assets\images\business.jpg" alt="Imagen" height=500px>
+  </mat-grid-tile>
+
+  <!-- Segunda columna: Formulario de inicio de sesión -->
+  <mat-grid-tile>
+    <div class="login-container">
+      <mat-card class="login-card">
+        <mat-card-header class="header-card">
+          <mat-card-title class="form-title">Iniciar Sesión</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="content-card">
+          <form>
+            <mat-form-field class="label-field">
+              <mat-label class="label">Usuario</mat-label>
+              <input class="input" matInput placeholder="Ingrese su usuario">
+            </mat-form-field>
+            <mat-form-field class="label-field">
+              <mat-label class="label">Contraseña</mat-label>
+              <input matInput type="password" placeholder="Ingrese su contraseña">
+            </mat-form-field>
+            <button routerLink="/main-page" routerLinkActive="active" ariaCurrentWhenActive="page" class="btnLogin"
+              mat-raised-button color="primary">Ingresar</button>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-grid-tile>
+
+
+</mat-grid-list>
