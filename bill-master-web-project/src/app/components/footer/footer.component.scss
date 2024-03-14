@@ -1,0 +1,44 @@
+.mat-toolbar {
+    background-color: #4D0D53;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+}
+
+.toolbarMiddleSpace {
+    flex: 1 1 auto;
+}
+
+
+.mat-toolbar  {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; // Justifica los elementos a la derecha
+  }
+  
+  .social-icons li {
+    margin-left: 10px; // Espaciado entre los elementos
+  }
+  
+  .social-icons li:first-child {
+    margin-left: 0; // Elimina el margen izquierdo del primer elemento
+  }
+  
+  .social-icons a {
+    display: block; // Permite que los elementos ocupen todo el espacio del contenedor li
+  }
+  
+  .social-icons img {
+    width: 30px; // Ajusta el ancho de los íconos según sea necesario
+    height: auto; // Mantiene la proporción original de la imagen
+  }
