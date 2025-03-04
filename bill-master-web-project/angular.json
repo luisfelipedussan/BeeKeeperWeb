@@ -43,6 +43,14 @@
             "prerender": true,
             "ssr": {
               "entry": "server.ts"
+            },
+            "baseHref": "/bill-master-web/",
+            "allowedCommonJsDependencies": [
+              "@angular/common/http"
+            ],
+            "preserveSymlinks": true,
+            "optimization": {
+              "fonts": false
             }
           },
           "configurations": {
@@ -50,13 +58,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "8kb"
                 }
               ],
               "outputHashing": "all"
@@ -108,8 +116,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2051b548-2133-4da4-a436-db9b86077d8a"
   }
 }
