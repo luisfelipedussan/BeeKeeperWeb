@@ -5,8 +5,9 @@ import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/contact', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'login', component: LoginComponent },
+  { path: '**', redirectTo: '/contact' }
 ];
 
 @NgModule({

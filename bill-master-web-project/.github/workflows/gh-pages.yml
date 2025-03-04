@@ -21,7 +21,10 @@ jobs:
         run: npm install
 
       - name: Build
-        run: ng build --base-href=/bill-master-web/
+        run: ng build --base-href=/BeeKeeperWeb/
+
+      - name: Copy index to 404
+        run: cp dist/bill-master-web-project/browser/index.html dist/bill-master-web-project/browser/404.html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
