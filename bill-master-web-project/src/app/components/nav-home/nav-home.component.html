@@ -1,26 +1,30 @@
 <mat-toolbar class="header">
     <mat-toolbar-row>
-
-        <img id="Logo" src="/assets/images/icon.jpg" alt="Logo de Bill Master" height = 90px >
-
+        <img id="Logo" src="assets/images/icon.png" alt="Logo" height="90px">
 
         <span class="toolbarMiddleSpace"></span>
 
         <div class="ml-auto">
-            <a id="Home" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"
-                class="btn btn-primary mr-2">Home</a>
 
             <span class="toolbarMiddleSpace"></span>
 
-            <a id="Contacto" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page"
-                class="btn btn-primary mr-2">Contacto</a>
+            <button mat-button
+                    id="Contacto"
+                    routerLink="/contact"
+                    routerLinkActive="active-link"
+                    class="nav-button">
+                Home
+            </button>
+
             <span class="toolbarMiddleSpace"></span>
 
-            <a id="Login" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
-                class="btn btn-primary mr-2">Login</a>
+            <button mat-button
+                    id="Login"
+                    routerLink="/login"
+                    routerLinkActive="active-link"
+                    class="nav-button">
+                Login
+            </button>
         </div>
-
-
     </mat-toolbar-row>
-
 </mat-toolbar>

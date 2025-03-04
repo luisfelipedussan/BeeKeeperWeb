@@ -88,3 +88,37 @@ footer {
     width: 30px; // Ajusta el ancho de los íconos según sea necesario
     height: auto; // Mantiene la proporción original de la imagen
   }
+
+.mat-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  mat-sidenav-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+}

@@ -3,19 +3,14 @@
 
   <mat-sidenav-content>
     <header class="header">
-      <app-nav-home> </app-nav-home>
-
+      <app-nav-home></app-nav-home>
     </header>
 
-    <h1>Hello World</h1>
-    <p>Testing if this shows up</p>
+    <main class="main-content">
+      <router-outlet></router-outlet>
+    </main>
 
-    <router-outlet></router-outlet>
-
-    <footer>
-      <app-footer> </app-footer>
-    </footer>
-
+    <app-footer></app-footer>
   </mat-sidenav-content>
 
 </mat-sidenav-container>
