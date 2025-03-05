@@ -1,0 +1,10 @@
+{
+  "routes": [
+    "/",
+    "/contact",
+    "/Home",
+    "/login",
+    "/main-page",
+    "/recargaApp"
+  ]
+}
