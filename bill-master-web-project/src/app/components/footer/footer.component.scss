@@ -1,0 +1,127 @@
+.mat-toolbar {
+    background-color: #4D0D53;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+}
+
+.toolbarMiddleSpace {
+    flex: 1 1 auto;
+}
+
+
+.mat-toolbar  {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; // Justifica los elementos a la derecha
+  }
+  
+  .social-icons li {
+    margin-left: 10px; // Espaciado entre los elementos
+  }
+  
+  .social-icons li:first-child {
+    margin-left: 0; // Elimina el margen izquierdo del primer elemento
+  }
+  
+  .social-icons a {
+    display: block; // Permite que los elementos ocupen todo el espacio del contenedor li
+  }
+  
+  .social-icons img {
+    width: 30px; // Ajusta el ancho de los íconos según sea necesario
+    height: auto; // Mantiene la proporción original de la imagen
+  }
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  margin-top: auto;
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+
+    .footer-section {
+      h4 {
+        color: #333;
+        margin-bottom: 1rem;
+        font-family: 'Lexend', sans-serif;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.5rem;
+
+          a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: #F6CDFA;
+            }
+          }
+        }
+      }
+
+      p {
+        color: #666;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+
+    p {
+      color: #666;
+      margin: 0;
+    }
+  }
+
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+}

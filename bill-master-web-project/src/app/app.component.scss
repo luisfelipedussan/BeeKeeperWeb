@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+#Logo {
+    size: 50px;
+}
+
+#Home,
+#Contacto,
+#Login {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Lexend', sans-serif;
+
+}
+
+#Login {
+    color: #FBBC05;
+
+}
+
+.btn-primary {
+    background-color: #4D0D53;
+    border-color: #4D0D53;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    margin-right: 100px;
+    margin-left: 80px;
+
+}
+
+.mat-toolbar {
+    background-color: #4D0D53;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+}
+
+.mat-toolbar-row,
+.mat-toolbar {
+
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.toolbarMiddleSpace {
+    flex: 1 1 auto;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; // Justifica los elementos a la derecha
+  }
+  
+  .social-icons li {
+    margin-left: 10px; // Espaciado entre los elementos
+  }
+  
+  .social-icons li:first-child {
+    margin-left: 0; // Elimina el margen izquierdo del primer elemento
+  }
+  
+  .social-icons a {
+    display: block; // Permite que los elementos ocupen todo el espacio del contenedor li
+  }
+  
+  .social-icons img {
+    width: 30px; // Ajusta el ancho de los íconos según sea necesario
+    height: auto; // Mantiene la proporción original de la imagen
+  }
+
+.mat-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  mat-sidenav-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+}

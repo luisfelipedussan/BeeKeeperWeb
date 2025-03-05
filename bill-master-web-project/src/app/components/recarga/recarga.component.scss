@@ -1,0 +1,63 @@
+mat-toolbar-row {
+    text-align: center;
+    margin-top: 50px;
+    padding: 0;
+    background-color: white;
+
+}
+
+mat-toolbar {
+    background-color: white;
+
+}
+
+.toolbarMiddleSpace {
+    flex: 1 1 auto;
+}
+
+mat-form-field {
+    width: 15%;
+}
+
+#label1,
+#label2{
+    margin-top: 0;
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Lexend', sans-serif;
+    height: 50px;
+    text-align: center;
+    color: #4D0D53;
+
+
+}
+
+h2 {
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Lexend', sans-serif;
+    height: 50px;
+    text-align: center;
+    color: black; 
+}
+
+.recarga-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 40px);
+}
+
+.btnRecarga {
+    background-color: #F6CDFA;
+    border-color: #F6CDFA;
+    color: black;
+    font-family: 'Lexend', sans-serif;
+}
