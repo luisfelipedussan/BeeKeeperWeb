@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -7,9 +8,6 @@ import { LoginComponent } from './components/login/login.component';
 import { RecargaComponent } from './components/recarga/recarga.component';
 import { NavHomeComponent } from './components/nav-home/nav-home.component';
 import { FooterComponent } from './components/footer/footer.component';
-
-
-
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -47,5 +45,8 @@ import { MatButtonToggleGroup } from '@angular/material/button-toggle';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'bill-master-web-project';
+  constructor(private router: Router) {
+    // Forzar la navegación a contact al inicio
+    this.router.navigate(['/contact']);
+  }
 }
